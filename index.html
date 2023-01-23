@@ -25,10 +25,23 @@
 </head>
 
 <body>
-    <header class=" container mx-auto bg-amber-50">
+    <header class=" bg-amber-50">
         <!-- nav  -->
+        <nav class="container mx-auto flex">
+            <div class="grid grid-rows-1 md:grid-cols-2 items-center ">
+                <div class="pl-6">
+                    <img class="w-48 h-10  m-10" src="icons/Group 33072.png" alt="">
+                </div>
+                <div class="grid grid-row-1 md:grid-cols-4 font-semibold">
+                    <a class="pl-24" href="#">Home</a>
+                    <a class="pl-24" href="#">Product</a>
+                    <a class="pl-24" href="#">Contact Us</a>
+                    <a class="pl-24" href="#">About Us</a>
+                </div>
+            </div>
+        </nav>
         <!-- banner -->
-        <div class="py-12 md:flex justify-center items-center mt-12">
+        <div class=" container mx-auto py-12 md:flex justify-center items-center mt-12">
             <div class="space-y-6 px-4">
                 <h1 class="text-7xl font-semibold uppercase"><span class=" mb-6 text-amber-300 ">Be the
                         Penguin</span><br> of
@@ -190,10 +203,8 @@
             </div>
         </section>
         <section class="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 ">
-            <div class="bg-slate-100 row-span-3 ml-10 rounded-2xl shadow-2xl">
-                <img src="images/shopping.png" alt="">
-            </div>
-            <div class="bg-slate-100 flex p-6 rounded-2xl shadow-2xl">
+
+            <div class="order-2 md:order-1 bg-slate-100 flex p-6 rounded-2xl shadow-2xl">
                 <img class="h-20 w-20" src="images/house.png" alt="">
                 <div class="text-service ml-9">
                     <h2 class="text-2xl pb-4">Find the Perfect Fit</h2>
@@ -201,7 +212,10 @@
                         offer styles for every body.</p>
                 </div>
             </div>
-            <div class="bg-slate-100 flex p-6 rounded-2xl shadow-2xl">
+            <div class="order-1 md:order-2 bg-slate-100 row-span-3 rounded-2xl shadow-2xl">
+                <img src="images/shopping.png" alt="">
+            </div>
+            <div class="order-3 bg-slate-100 flex p-6 rounded-2xl shadow-2xl">
                 <img class="h-20 w-20" src="images/box.png" alt="">
                 <div class="text-service ml-9">
                     <h2 class="text-2xl pb-4">Free Exchanges</h2>
@@ -209,7 +223,7 @@
                         with peace of mind.</p>
                 </div>
             </div>
-            <div class="bg-slate-100 flex p-6 rounded-2xl shadow-2xl">
+            <div class="order-4 bg-slate-100 flex p-6 rounded-2xl shadow-2xl">
                 <img class="h-20 w-20" src="images/question.png" alt="">
                 <div class="text-service ml-9">
                     <h2 class="text-2xl pb-4">Contact Our Seller</h2>
